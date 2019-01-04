@@ -1,0 +1,827 @@
+/* Fonts */
+/* Generic */
+html{
+	height: 100%;
+}
+body{
+	background-color: #FFFFFF;
+	color: #000000;
+	height: inherit;
+	padding: 0;
+	margin: 0;
+}
+/* Fixed width button center */
+.btn-center{ margin: 0 auto; }
+
+.main{
+	display: grid;
+	grid-template-columns: 20vw auto;
+	height: auto;
+}
+.body-content{
+	grid-column-start: 2;
+	display: grid;
+	grid-template-columns: repeat(10, 10%);
+}
+.title-nav-art-depot{
+	font-family: 'Titan One', cursive;
+	font-size: 40px;
+	text-transform: uppercase;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	text-shadow: 2px 2px black;
+}
+.title-color-part1{color:green;}
+.title-color-part2{color: purple;}
+.wrapper{
+	max-width: 1920px;
+	width: 100%;
+	height: inherit;
+	margin: 0 auto;
+}
+.side-nav{
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: 20vw;
+	border: 1px solid;
+	display: grid;
+	grid-template-rows: repeat(5, 20%);
+	background-color: #007fef;
+	padding: 0;
+	margin: 0;
+}
+.side-nav a{
+	display: block;
+	grid-row: 5;
+	width: 80%;
+	height: 50px;
+	margin: 10px auto;
+	display: block;
+	font-size: 20px;
+	line-height: 50px;
+	border: 1px solid #000;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	cursor: pointer;
+	background-color: #0064bc;
+}
+
+.side-nav img{
+	width: 100%;
+}
+.bottom-nav{
+	grid-row-start: 3;
+	grid-row-end: 6;
+}
+
+.bottom-nav a:hover{
+	background-color: #005096;
+}
+#account-nav-btn{ background-color: #039b19; }
+#reports-nav-btn{ background-color: #d61b1b; }
+
+.nav-breadcrumb{ 
+	margin: 20px 0;
+	padding: 10px 0;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+	font-size: 18px;
+}
+/* ------- Announcement Page Template -------- */
+.post-announcement{
+	grid-column-start: 3;
+	grid-column-end: 9;
+	align-items: center;
+	border: 1px solid #333333;
+	margin: 20px 0;
+}
+.announcements{
+	grid-column-start: 3;
+	grid-column-end: 9;
+	align-items: center;
+	border: 1px solid #333333;
+	margin: 20px 0;
+}
+.announcement-text-title{
+	margin: 20px 0 0 0;
+	width: 100%;
+	font-size: 24px;
+}
+.announcement-text-body{
+	margin: 10px auto;
+	resize: none;
+	width: 100%;
+	min-height: 500px;
+	font-size: 16px;
+}
+.announcement-post-btn{
+	width: 150px;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+.announcement-title{
+	text-align: center;
+	font-size: 40px;
+}
+.announcement-info{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #e2e0e0;
+	font-size: 15px;
+	padding: 2px;
+}
+.announcement-text{
+	width: inherit;
+	height: auto;
+	font-size: 25px;
+	padding: 2%;
+}
+
+/* ----------------- Sign In CSS -------------------- */
+
+#sign-in{
+	margin-top: 40%;
+	grid-column-start: 3;
+	grid-column-end: 9;
+	grid-row-start: 2;
+	grid-row-end: 9;
+	justify-self: center;
+	align-self: center;
+}
+
+.sign-in-text{
+	height: 35px;
+	font-size: 30px;
+	width: 75%;
+	margin: 10px auto;
+	display: block;
+}
+
+.sign-in-btns{
+	width: 250px;
+	margin:  5px;
+	height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #000000;
+	display: inline-flex;
+	text-align: center;
+	background-color: #f3f3f3;
+	border: 1px solid #000000;
+	vertical-align: top;
+	justify-content: center;
+	align-items:center;
+}
+
+#login{
+	background-color: #13b53c;
+	color: #fff;
+}
+
+#register-user{
+	background-color: #e27e04;
+	color: #FFFFFF;
+}
+
+.modal-form{
+	margin: 10px auto;
+	width: 90%;
+}
+
+.modal-form h3{
+	margin: 10px 0;
+	text-align: center;
+}
+.modal-form table{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.modal-form input{
+	margin: 10px;
+}
+.modal-form-lbl{
+	font-size: 20px;
+	vertical-align: middle;
+	text-align: right;
+	margin-right: 5px;
+}
+#modal-confirm-center{
+	margin: 0 auto;
+	width: 150px;
+}
+/* --------------- Account Register CSS --------------- */
+#register-main{
+	/* uses the same grid layout as main */
+	grid-column-start: 3;
+	grid-column-end: 9;
+}
+#register-error-messages{
+	margin-top: 10px;
+	grid-column-start: 3;
+	grid-column-end: 9;
+	justify-self: center;
+	align-self: center;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+}
+.error_message{	color: red;}
+.success_message{color: green;}
+
+#register-create-account-btn{
+	grid-column-start: 8;
+	grid-column-end: 12;
+	justify-self: center;
+	align-self: center;
+	width: 100%;
+	height: 70px;
+	margin-top: 20px;
+	background-color: #13b53c;
+	color: #FFF;
+	font-size: 18px;
+	cursor: pointer;
+}
+#register-create-account-btn:hover{
+	background-color: #0e7f2a;
+}
+.register-info-blocks{
+	margin-top: 40px;
+	border: 1px solid #000;
+	height: auto;
+	width: 100%;
+}
+.register-info-blocks h2{
+	text-align: center;
+	border-bottom: 1px solid #000;
+	margin: 0;
+	padding: 10px 0;
+}
+.register-info-blocks table{
+	width: 100%;
+	margin: 20px auto;
+	font-size: 18px;
+}
+.register-info-blocks table select{
+	height: 30px;
+	width: 80%;
+}
+.register-info-blocks table tr{margin: 10px 0;}
+.rib-input{
+	width: 60%;
+}
+.rib-input input{
+	width: 80%;
+	font-size: 18px;
+	margin: 5px;
+}
+.rib-input select{
+	margin: 5px;
+}
+.rib-input img{
+	margin: 10px;
+	border: 1px solid #000;
+}
+.rib-lbls{
+	width: 35%;
+	text-align: right;
+	vertical-align: middle;
+}
+
+
+/* -------------------- Account Information CSS ----------------------- */
+
+#sign-out{
+	grid-column-start: 2;
+	grid-column-end: 10;
+	margin-top: 50%;
+	justify-self: center;
+	align-self: center;
+	height: 100%;
+	width: 100%;
+}
+#sign-out h1{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#sign-out h1, form{
+	text-align: center;
+}
+.sign-out-btns{
+	width: 250px;
+	margin:  5px;
+	height: 80px;
+	font-size: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #000000;
+	display: inline-flex;
+	text-align: center;
+	background-color: #f3f3f3;
+	border: 1px solid #000000;
+	vertical-align: top;
+	justify-content: center;
+	align-items:center;
+}
+.sign-out-btns:hover{background-color: #a8a8a8;}
+#signout{background-color: #bf0101; color: #fff;}
+#signout:hover{background-color: #7c0000;}
+
+/* -- Change Account information -- */
+#save-account-btn{
+	grid-column-start: 8;
+	grid-column-end: 12;
+	justify-self: center;
+	align-self: center;
+	width: 100%;
+	height: 40px;
+	margin: 20px 0;
+	background-color: #13b53c;
+	color: #FFF;
+	font-size: 18px;
+	cursor: pointer;
+}
+#save-account-btn:hover{
+	background-color: #0e7f2a;
+}
+#change-password-block{
+	grid-column-start: 3;
+	grid-column-end: 9;
+	grid-row-start: 2;
+	grid-row-end: 9;
+	justify-self: center;
+	align-self: center;
+}
+.change-password-text{
+	height: 35px;
+	font-size: 25px;
+	width: 100%;
+	margin: 10px auto;
+	display: block;
+}
+
+/* ----------------- User HomePage CSS -------------------- */
+.user-page-header{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	align-self: center;
+	justify-content: center;
+	text-align: center;
+	border-bottom: 2px solid #000;
+	height: 260px;
+	padding-bottom: 10px;
+}
+.user-profile-picture{
+	margin: 20px auto;
+	width: 200px;
+    height: 200px;
+    display: block;
+}
+.about-me-container h1{
+	font-size: 40px;
+	text-align: center;
+}
+
+.about-me-container{
+	grid-column-start: 3;
+	grid-column-end: 11;
+	height: 260px;
+	border-bottom: 2px solid #000;
+	padding-bottom: 10px;
+}
+#aboutme-save{
+	background-color: green;
+	color: #FFF;
+}
+.about-me-info{
+	resize: none;
+	width: 80%;
+	height: 130px;
+	padding: 10px;
+	margin: 0 auto;
+}
+.blog-posts-container{
+	grid-column-start: 3;
+	grid-column-end: 9;
+	align-self: center;
+	justify-content: center;
+}
+.blog-post{
+	margin: 10px;
+	border: 1px solid #000;
+}
+.blog-post form{
+	margin: 10px 0;
+}
+.blog-post-title{
+	display: block;
+	font-size: 26px;
+	padding-left: 5px;
+}
+.blog-post-date{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #e2e0e0;
+	font-size: 15px;
+	padding: 2px 2px 2px 5px;
+	display: block;
+	text-align: left;
+}
+.blog-post-body{
+	font-size: 16px;
+	padding: 5px;
+	resize: none;
+	width: 100%;
+	min-height: 150px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+
+}
+
+.create-post-btn{
+	margin: 10px auto;
+	display: block;
+}
+
+.create-post-text-body{
+	resize: none;
+	height: 300px;
+}
+
+.readonly{
+	background-color: #d3d3d3;
+}
+
+/* ---------- Artist List Page ---------- */
+
+.artist-list-search{
+	grid-column-start: 1;
+	grid-column-end: 11;
+	height: 150px;
+	border-bottom: 2px solid #c2c2c2;
+}
+
+#artist-list-results{
+	grid-column-start: 1;
+	grid-column-end: 11;
+}
+.artist-list-search-textbox{
+	width: 60%;
+	margin: 50px auto 10px auto;	
+}
+.artist-list-search-alphabet{
+	text-align: center;
+}
+.artist-list-search-az{
+	font-size: 16px;
+	padding: 0 5px;
+	color: #0000EE;
+	cursor: pointer;
+	text-decoration: underline;
+}
+#artist-list-results h2{
+	margin: 20px 0;
+	text-align: center;
+	font-size: 30px;
+}
+
+#artist-list-results h2 span{
+	color: #008c2c;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+/* Artist Container - Displays Artist Name and Profile Image */
+.artist-list-container{
+	width: 200px;
+	height: 230px;
+	margin: 20px;
+	border: 1px solid #000;
+	overflow: hidden;
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+
+.artist-list-container h4{
+	text-align: center;
+	font-size: 20px;
+}
+
+.artist-list-container img{
+	border-top: 1px solid #000;
+	width: 200px;
+	height: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.artist-list-container:hover{
+	border: 3px solid #000;
+}
+.artist-list-container:hover h4{
+	background-color: #000;
+	color: #FFF;
+}
+
+
+/* ------------   Artwork CSS --------------- */
+/* General */
+.artwork-container{
+	grid-column-start: 1;
+	grid-column-end: 11;
+}
+
+.artwork-container h1{
+	font-size: 30px;
+	text-align: center;
+	margin: 2% 0;
+}
+/* Album CSS */
+
+.album-overview{
+	margin: 1%;
+	display: inline-flex;
+	width: 100%;
+	flex-flow: row wrap;
+}
+
+.album-object{
+	width: 250px;
+	height: 250px;
+	border: 3px solid #000;
+	cursor: pointer;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin: 3%;
+}
+
+.album-object-inner{
+	flex: 6;
+	background-color: grey;
+	border-bottom: 3px solid #000;
+}
+
+.album-object-inner h4{
+	font-size: 20px;
+	background-color: #FFF;
+	border-bottom: 2px solid #000;
+	text-align: center;
+	color: #000;
+	flex: 1;
+}
+
+.album-object  button{
+	flex: 1;
+	cursor: pointer;
+}
+.album-object:hover{ box-shadow: 0 0 5px #18ce00; }
+.album-object:hover h4{
+	background-color: #18ce00;
+	color: #FFF;
+}
+
+#album-create{
+	width: 250px;
+	height: 250px;
+	border: 5px dashed #000;
+	margin: 3%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 5px;
+	text-decoration: underline;	
+}
+
+#album-create:hover{background-color: #e5e5e5;}
+
+
+/* modal create album */
+.create-album-modal-fields{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.create-album-modal-fields ol{
+	list-style: none;
+}
+.create-album-modal-fields li{ margin: 20px 0; }
+.create-album-modal-fields input, select{
+	width: 60%;
+	display: inline-block;
+	margin-left: 10px;
+	height: 30px;
+	font-size: 18px;
+}
+#camf-30h-select{
+	height: 30px;
+}
+.create-album-modal-fields label{
+	width: 30%;
+	display: inline-block;
+	text-align: right;
+}
+
+#permission_modal_card{
+	width: 300px;
+}
+#permission_modal_card form{
+	margin: 0 20px;
+}
+#permission_modal_card input {margin: 0 10px;}
+#permission_modal_card button{ margin: 40px 0 0 0; }
+
+#permission_control_group{width: 100px; margin: 0 auto;}
+
+
+/* Gallery -  Images inside albums */
+
+/* General */
+.gallery-container{
+	grid-column-start: 1;
+	grid-column-end: 11;
+}
+.gallery-header{
+	text-align: center;
+	margin: 2% auto;
+	height: 60px;
+	width: 60%;
+}
+.gallery-header h1{
+	font-size: 30px;
+	display: inline-block;
+}
+
+.gallery-header button{
+	float: right;
+	height: 60px;
+	width: 100px;
+}
+#upload-img-modal button{
+	margin: 0 10px;
+}
+#upload-img-modal select{
+	width: 100%;
+}
+#gallery-list{
+	width: 90%;
+	margin: 50px auto;
+}
+.gallery-image-container{
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+	display: inline-flex;
+	border: 1px solid #000;
+	flex-direction: column;
+}
+.gallery-image-container h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	color: #000;
+}
+.gallery-image-container{text-align: center; color: #000;}
+.gallery-img-bg{
+	width: inherit;
+	height: 220px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.view_overlay{
+	border: 1px solid #000;
+	color: #FFF;
+	background-color: rgba(0,0,0,.8);
+	width: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.sortby_selector{ display: flex; align-items: center; justify-content: center; }
+.gallery-image-container:hover .view_overlay{
+	display: flex;
+}
+
+
+/* Gallery Image - Theater / View Mode */
+.artwork-theater-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	max-width: 1200px;
+	margin: 10px auto;
+}
+#theater-image{
+	max-width: 1200px;
+	height: auto;
+	border: 1px solid #000;
+	display: flex;
+	margin: 25px auto;
+}
+#theater-artwork-info{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #e2e2e2;
+	width: 100%;
+}
+#theater-artwork-info-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #e2e2e2;
+	height: 30px;
+	align-items: center;
+	padding: 10px 15px;
+}
+#theater-artwork-info-header h4{ margin: 0; }
+#theater-artwork-info-body {font-size: 16px; padding: 20px; min-height: 200px;}
+#theater-artwork-info-footer{ display: flex; flex-direction: row; justify-content: space-around; }
+#comment-section{
+	width: 100%;
+	border: 1px solid #e2e2e2; 
+	padding: 10px;
+	margin: 20px 0;
+}
+#comment-section-header{
+	display: flex;
+	justify-content: space-between;
+}
+#comment-section-header h3{ margin: 0 auto; }
+.comment-block { border: 1px solid #e2e2e2; padding: 10px; margin: 15px 0; }
+.comment-block-header{ 
+	display: flex; 
+	flex-direction: row; 
+	font-weight: bold;
+	font-size: 16px;
+	justify-content: space-between;
+}
+.delete-comment{background-color: #ff1105;}
+.comment-block-body {margin-top: 20px;}
+.comment-block-footer{display: flex; justify-content: flex-end;}
+.comment-vote-container{margin: 0 15px;}
+.comment-vote-container a{ margin: 0 5px; }
+.admin-comment{ color: #ce0216;}
+.owner-comment{color: #00c62e;}
+.my-comment{color: #0800f7;}
+.comment-delete-confirmation-btn-group{text-align: center;}
+.comment-delete-confirmation-btn-group button{margin: 0 20px; width: 100px;}
+#report-sent-location{width:100%;}
+#report-sent{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ce0216; 
+	font-size: 20px; 
+	text-align: center; 
+	color: #fff;
+	height: 50px;
+	width: 100%;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+
+/* -- Admin User Lists CSS -- */
+.user-list-container{
+	grid-column-start: 2;
+	grid-column-end: 10;
+}
+#user-list-table{margin-top: 60px;}
+#user-list-table th{font-size: 22px;}
+.btn-deactivate {width: 105px;}
+.btn-activate {width: 105px;}
+.user-deactive{background-color: #bbbbbb;}
+
+
+/* Report List CSS */
+#report-list-table{margin-top: 60px;}
+#report-list-tableth{font-size: 22px;}
+#report-list-table button{margin: 10px 0;}
+#report-list-table th{text-align: center;}
+
+
+/* Commissions CSS */
+.commissions-list-container{
+	grid-column-start: 1;
+	grid-column-end: 11;
+}
+.commission_report_container {display: inline-flex; width: 450px; margin: 20px 40px; flex-direction: column;}
+.commission_report_container label{font-weight: bold;}
+.commissions-list-container button{margin: 10px 0;}
